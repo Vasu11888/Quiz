@@ -1,0 +1,19 @@
+<div>
+  <div class="button">
+    <button mat-stroked-button [routerLink]="['/question']">Basic</button>
+  </div>
+  <div>
+    <table>
+      <tr>
+        <th>No .</th>
+        <th>No of Questions Attempted</th>
+        <th>Status</th>
+      </tr>
+      <tr *ngFor="let result of dataSource">
+        <td>{{ result.testNum }}</td>
+        <td>{{ result.count }}</td>
+        <td>{{ result.status }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
